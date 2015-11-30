@@ -1,8 +1,7 @@
 // Language syntax highlighting
 
 .comment {
-  color: @mono-3;
-  font-style: italic;
+  color: @hue-6;
 }
 
 .entity {
@@ -17,10 +16,10 @@
 }
 
 .keyword {
-  color: @hue-3;
+  color: @hue-4;
 
   &.control {
-    color: @hue-3;
+    color: @hue-4;
   }
 
   &.operator {
@@ -37,16 +36,17 @@
 }
 
 .storage {
-  color: @hue-3;
+  color: @hue-3-2;
 
   &.type {
     &.annotation,
     &.primitive {
-      color: @hue-3;
+      color: @hue-3-2;
     }
   }
 
   &.modifier {
+    color: @hue-3;
     &.package,
     &.import {
       color: @mono-1;
@@ -55,10 +55,14 @@
 }
 
 .constant {
-  color: @hue-6;
+  color: @hue-3-2;
 
   &.variable {
     color: @hue-6;
+  }
+  
+  &.language {
+    color: @hue-4;
   }
 
   &.character.escape {
@@ -66,7 +70,7 @@
   }
 
   &.numeric {
-    color: @hue-6;
+    color: @hue-5-2;
   }
 
   &.other.color {
@@ -79,7 +83,7 @@
 }
 
 .variable {
-  color: @hue-5;
+  color: @hue-1;
 
   &.interpolation {
     color: @hue-5-2;
@@ -91,7 +95,7 @@
 }
 
 .string {
-  color: @hue-4;
+  color: @hue-5;
 
 
   &.regexp {
@@ -110,7 +114,7 @@
 .punctuation {
   &.definition {
     &.comment {
-      color: @mono-3;
+      color: @hue-6;
     }
 
     &.method-parameters,
@@ -161,22 +165,22 @@
   }
 
   &.function  {
-    color: @hue-1;
+    color: @hue-2;
 
     &.any-method {
-      color: @hue-2;
+      color: @hue-1;
     }
   }
 }
 
 .entity {
   &.name.function {
-    color: @hue-2;
+    color: @mono-1;
   }
 
   &.name.class,
   &.name.type.class {
-    color: @hue-6-2;
+    color: @mono-1;
   }
 
   &.name.section {
